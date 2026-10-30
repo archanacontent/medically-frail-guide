@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="data-falls-short">
+  <title>When The Data Falls Short</title>
+  <shortdesc>Some frail members leave no useful trail in Medicaid claims, such as people who were recently uninsured or who get their care elsewhere. For them, the outcome depends on the proof they can give, and those rules tighten in 2028.</shortdesc>
+  <taskbody>
+    <steps>
+      <step>
+        <cmd><b>Ask In Plain Language</b> - Use simple screening questions. People often don't name a condition even when asked, but other information they share can still show it.</cmd>
+      </step>
+      <step>
+        <cmd><b>Through 2027</b> - States <xref keyref="src-cms">may ask for documentation or accept</xref> the member's own statement.</cmd>
+      </step>
+      <step>
+        <cmd><b>From <keyword keyref="limit-date"/></b> - States may accept a statement made under penalty of perjury only once per enrollment period. At the first renewal after that, the state must confirm frailty from reliable data or documentation.</cmd>
+      </step>
+      <step>
+        <cmd><b>Accept Documentation</b> - CMS lists health records, provider certification, care-management records from managed care plans, and functional assessments.</cmd>
+      </step>
+    </steps>
+    <postreq>
+      <note type="tip">Start provider outreach now. When the state can't verify compliance, a member has 30 days to respond to a notice. From 2028, a frail member without a claims history will depend on a doctor's paperwork arriving within that window.</note>
+    </postreq>
+  </taskbody>
+</task>

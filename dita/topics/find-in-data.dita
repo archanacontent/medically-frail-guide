@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="find-in-data">
+  <title>Finding Frail Members In Existing Data</title>
+  <shortdesc>States must check data they already hold before asking a member for proof. Every frail member identified this way keeps their coverage without ever receiving a request.</shortdesc>
+  <taskbody>
+    <context>
+      <fig id="data-first">
+        <title>Data First, Paperwork Last</title>
+        <image href="../images/data-first.svg" placement="break" scope="local">
+          <alt>The order of checks: build the state condition list, run 12 months of claims, exempt Tier 1 matches with no request, send Tier 2 and 3 cases for more data and caseworker review, and ask the member for proof only at the end.</alt>
+        </image>
+      </fig>
+    </context>
+    <steps>
+      <step>
+        <cmd><b>List The Qualifying Conditions</b> - Start from the five federal groups and decide which diseases and diagnoses belong on your state's list.</cmd>
+      </step>
+      <step>
+        <cmd><b>Match Them To Code Sets</b> - Map each condition to ICD-10 diagnosis codes, and add pharmacy or equipment codes where they show severity.</cmd>
+      </step>
+      <step>
+        <cmd><b>Sort Conditions Into Tiers</b> - <xref keyref="src-cms">CMS offers an optional three-tier framework</xref>.</cmd>
+        <info>
+          <dl outputclass="labels">
+            <dlentry><dt>Tier 1</dt><dd>Conditions that can be confirmed from diagnosis data alone.</dd></dlentry>
+            <dlentry><dt>Tier 2</dt><dd>Conditions that need supporting signs, such as frequent hospital use, high-risk combinations of medicines, or medical equipment claims.</dd></dlentry>
+            <dlentry><dt>Tier 3</dt><dd>Not enough data to decide, so a caseworker reviews the case by hand.</dd></dlentry>
+          </dl>
+          <note>CMS wrote these tiers around the impairment test the court has now struck down, so confirm how your state applies them.</note>
+        </info>
+      </step>
+      <step>
+        <cmd><b>Run 12 Months Of Data</b> - Check <ph conref="../reuse/shared.dita#shared/lookback"/>.</cmd>
+        <info><p>CMS also names other sources, including health information exchanges, workers' compensation and short-term disability claims.</p></info>
+      </step>
+      <step>
+        <cmd><b>Handle Substance Use Records With Care</b> - Records covered by 42 CFR Part 2 follow stricter confidentiality rules, and states are <xref keyref="src-macpac">still waiting for CMS guidance</xref> on how those rules apply here.</cmd>
+      </step>
+      <step>
+        <cmd><b>Record The Evidence And Set A Review Date</b> - Note which data confirmed each exemption. Frailty status must be checked again at least every 12 months.</cmd>
+      </step>
+    </steps>
+    <result>
+      <p>Members whose records clearly show frailty are exempt before any notice goes out, and caseworkers handle only the cases the data can't settle.</p>
+    </result>
+  </taskbody>
+</task>

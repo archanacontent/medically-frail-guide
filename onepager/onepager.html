@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Is This Member Exempt?</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+@font-face{font-family:"IBM Plex Sans";font-weight:400;src:url(fonts/ibm-plex-sans-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:"IBM Plex Sans";font-weight:500;src:url(fonts/ibm-plex-sans-latin-500-normal.woff2) format("woff2")}
+@font-face{font-family:"IBM Plex Sans";font-weight:600;src:url(fonts/ibm-plex-sans-latin-600-normal.woff2) format("woff2")}
+@font-face{font-family:"IBM Plex Sans";font-weight:700;src:url(fonts/ibm-plex-sans-latin-700-normal.woff2) format("woff2")}
+@page { size: 8.5in 11in; margin: 0; }
+:root { --az:#0078d4; --deep:#005a9e; --navy:#0b2a4a; --ink:#0f2236; --body:#2b3e52; --mute:#5a6f84; --edge:#d5e3f2; --soft:#eef5fc;
+  --ok:#107c41; --ok-soft:#e8f5ee; --warn:#9a5800; --warn-soft:#fbf2e4; --risk:#c8432f; --risk-soft:#fbebe8; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 8.5in; height: 11in; }
+body { font: 9.6pt/1.42 "IBM Plex Sans", Arial, sans-serif; color: var(--body); background: #fff; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.page { width: 8.5in; height: 11in; display: flex; flex-direction: column; overflow: hidden; }
+
+header { background: linear-gradient(120deg, #0b2a4a 0%, #005a9e 58%, #0078d4 100%); color: #fff; padding: .42in .55in .34in; position: relative; }
+header::after { content: ""; position: absolute; right: .55in; top: .38in; width: 1.1in; height: 1.1in; border-radius: 50%; border: 2px solid rgba(255,255,255,.18); box-shadow: 0 0 0 14px rgba(255,255,255,.05), 0 0 0 30px rgba(255,255,255,.035); }
+.eyebrow { font: 600 7.6pt/1 "IBM Plex Sans", sans-serif; letter-spacing: .14em; text-transform: uppercase; color: #9fd0ff; }
+h1 { font-size: 27pt; line-height: 1.05; font-weight: 700; letter-spacing: -.01em; margin: 9pt 0 7pt; }
+.sub { font-size: 10.5pt; color: #d6e8fb; max-width: 5.3in; }
+
+main { flex: 1; padding: .3in .55in 0; display: flex; flex-direction: column; }
+.start { display: flex; align-items: center; gap: 10pt; background: var(--soft); border: 1px solid var(--edge); border-radius: 9pt; padding: 8pt 12pt; }
+.start b { color: var(--ink); }
+.tag { font: 600 7pt/1 "IBM Plex Sans", sans-serif; letter-spacing: .12em; text-transform: uppercase; color: var(--az); background: #fff; border: 1px solid var(--edge); border-radius: 4pt; padding: 4pt 6pt; white-space: nowrap; }
+
+.flow { margin-top: 4pt; }
+.row { margin-bottom: 4pt; display: grid; grid-template-columns: 1fr 2.35in; gap: 0; align-items: stretch; position: relative; }
+.q { position: relative; padding: 14pt 0 0 34pt; }
+.q .num { position: absolute; left: 0; top: 14pt; width: 22pt; height: 22pt; border-radius: 6pt; background: var(--az); color: #fff; font: 600 10pt/22pt "IBM Plex Sans", sans-serif; text-align: center; }
+.q::before { content: ""; position: absolute; left: 10.5pt; top: 38pt; bottom: -14pt; width: 1.5pt; background: var(--edge); }
+.row:last-child .q::before { display: none; }
+.q h2 { font-size: 11.6pt; line-height: 1.25; color: var(--ink); font-weight: 600; margin-bottom: 3pt; }
+.q p { font-size: 9pt; color: var(--mute); }
+.q .no { display: inline-block; margin-top: 6pt; font: 600 7.4pt/1 "IBM Plex Sans", sans-serif; letter-spacing: .1em; text-transform: uppercase; color: var(--mute); }
+.out { position: relative; margin: 14pt 0 0 18pt; border-radius: 9pt; padding: 9pt 11pt; border: 1px solid; align-self: start; }
+.out::before { content: "YES"; position: absolute; left: -9pt; top: calc(50% - 9pt); transform: translateX(-50%); font: 600 6.6pt/1 "IBM Plex Sans", sans-serif; letter-spacing: .1em; color: var(--mute); background: #fff; padding: 2pt; }
+.out::after { content: ""; position: absolute; left: -16pt; top: 50%; width: 15pt; height: 1.5pt; background: currentColor; opacity: .5; }
+.out b { display: block; font-size: 10.4pt; margin-bottom: 2pt; }
+.out span { font-size: 8.6pt; color: var(--body); display: block; }
+.ok { background: var(--ok-soft); border-color: #bfe2cd; color: var(--ok); }
+.warn { background: var(--warn-soft); border-color: #ecd3a8; color: var(--warn); }
+
+.end { margin-top: 20pt; display: grid; grid-template-columns: 1fr 1fr; gap: 10pt; }
+.card { border-radius: 9pt; padding: 10pt 12pt; border: 1px solid var(--edge); }
+.card h3 { font: 600 7.4pt/1 "IBM Plex Sans", sans-serif; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 6pt; }
+.card p { font-size: 9pt; }
+.card.risk { background: var(--risk-soft); border-color: #f0c9c1; }
+.card.risk h3 { color: var(--risk); }
+.card.info { background: var(--soft); }
+.card.info h3 { color: var(--az); }
+.card ul { list-style: none; font-size: 9pt; }
+.card li { padding-left: 10pt; position: relative; margin-bottom: 2.5pt; }
+.card li::before { content: ""; position: absolute; left: 0; top: .55em; width: 4pt; height: 4pt; border-radius: 50%; background: var(--az); }
+
+.dates { margin-top: 14pt; display: grid; grid-template-columns: repeat(4, 1fr); border: 1px solid var(--edge); border-radius: 9pt; overflow: hidden; }
+.dates div { padding: 8pt 10pt; border-right: 1px solid var(--edge); }
+.dates div:last-child { border-right: 0; }
+.dates b { display: block; color: var(--az); font-size: 11pt; line-height: 1.15; }
+.dates span { display: block; font-size: 8pt; color: var(--mute); margin-top: 2pt; line-height: 1.3; }
+
+footer { padding: 10pt .55in .32in; font-size: 7.4pt; color: var(--mute); display: flex; justify-content: space-between; gap: 18pt; align-items: flex-end; }
+footer .src { max-width: 5.2in; }
+footer .brand { text-align: right; white-space: nowrap; }
+footer .brand b { color: var(--deep); font-size: 8pt; }
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <div class="eyebrow">Caseworker Quick Reference</div>
+    <h1>Is This Member Exempt?</h1>
+    <p class="sub">A medically frail check for Medicaid work requirements. Work through the data first, and ask the member for proof only when the data can't decide.</p>
+  </header>
+
+  <main>
+    <div class="start"><span class="tag">Start</span><span>The member is an adult subject to work requirements, and no other exemption applies yet. <b>Check data before contacting them.</b></span></div>
+
+    <div class="flow">
+      <div class="row">
+        <div class="q"><div class="num">1</div>
+          <h2>Do 12 months of claims and encounter data show a condition that settles frailty on its own?</h2>
+          <p>A Tier 1 condition on your state's list. Include paid, pended and denied claims.</p>
+          <span class="no">No - go to 2</span></div>
+        <div class="out ok"><b>Exempt</b><span>No request to the member. Record the data that confirmed it.</span></div>
+      </div>
+      <div class="row">
+        <div class="q"><div class="num">2</div>
+          <h2>Does the data show a listed condition with supporting signs?</h2>
+          <p>A Tier 2 condition backed by frequent hospital use, high-risk combinations of medicines or medical equipment claims.</p>
+          <span class="no">No - go to 3</span></div>
+        <div class="out ok"><b>Exempt</b><span>Record the diagnosis and the supporting signs used.</span></div>
+      </div>
+      <div class="row">
+        <div class="q"><div class="num">3</div>
+          <h2>Has the member reported a condition, or does other information point to one?</h2>
+          <p>People often don't name a condition when asked directly. Check what they've shared elsewhere.</p>
+          <span class="no">No - go to the end</span></div>
+        <div class="out warn"><b>Get proof</b><span><b style="display:inline;font-size:8.6pt">Through 2027:</b> accept their statement or ask for documentation.<br><b style="display:inline;font-size:8.6pt">From Jan 1, 2028:</b> one sworn statement per enrollment period, otherwise documentation.</span></div>
+      </div>
+    </div>
+
+    <div class="end">
+      <div class="card risk"><h3>No Evidence Of Frailty</h3><p>Check the member's other exemptions. If the state can't verify compliance, a notice goes out and the member has 30 days to respond, counted from five days after the notice.</p></div>
+      <div class="card info"><h3>Documentation CMS Lists</h3><ul><li>Health records</li><li>Provider certification</li><li>Managed care care-management records</li><li>Functional assessments</li></ul></div>
+    </div>
+
+    <div class="dates">
+      <div><b>12 months</b><span>Data look-back for frailty</span></div>
+      <div><b>Every 12 months</b><span>Reverify frailty status</span></div>
+      <div><b>Jan 1, 2027</b><span>Work requirements begin in most states</span></div>
+      <div><b>Oct 29, 2026</b><span>Court struck the added impairment test</span></div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="src">Condition not on your state's list? Members can ask the state to consider it. Sources: CMS, Implementing Medical Frailty Under Community Engagement; CMS-2454-IFC; HFMA and Becker's coverage of the October 29, 2026 ruling. Not legal advice.</div>
+    <div class="brand"><b>Medicaid 2027 Series - Part 2</b><br>archanacontent.github.io/medically-frail-guide</div>
+  </footer>
+</div>
+</body>
+</html>

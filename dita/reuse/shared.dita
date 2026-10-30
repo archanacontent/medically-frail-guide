@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="shared">
+  <title>Shared Content</title>
+  <shortdesc>Phrases reused across topics through content references, so each is updated in one place.</shortdesc>
+  <body>
+    <p><ph id="scope-note">Reports differ on whether the ruling covers every state or only the 25 states and D.C. that brought the case.</ph></p>
+    <p><ph id="taylor-note">A second case, <cite>Taylor v. Kennedy</cite>, is pending in Maryland and also challenges the limit on self-declaration.</ph></p>
+    <p><ph id="lookback">claims from the preceding 12 months, including paid, pended and denied claims, along with encounter data from managed care plans</ph></p>
+  </body>
+</topic>

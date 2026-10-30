@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossgroup PUBLIC "-//OASIS//DTD DITA Glossary Group//EN" "glossgroup.dtd">
+<glossgroup id="glossary">
+  <title>Glossary</title>
+  <glossentry id="adl">
+    <glossterm>Activities Of Daily Living</glossterm>
+    <glossdef>Basic self-care tasks such as bathing, dressing and eating.</glossdef>
+  </glossentry>
+  <glossentry id="encounter-data">
+    <glossterm>Encounter Data</glossterm>
+    <glossdef>Records of services delivered through managed care plans.</glossdef>
+  </glossentry>
+  <glossentry id="ex-parte">
+    <glossterm>Ex Parte Verification</glossterm>
+    <glossdef>Confirming eligibility from data the state already holds, without contacting the member.</glossdef>
+  </glossentry>
+  <glossentry id="self-declaration">
+    <glossterm>Self-Declaration</glossterm>
+    <glossdef>A member's own statement that they qualify, given without documents.</glossdef>
+  </glossentry>
+  <glossentry id="stable-recovery">
+    <glossterm>Stable Recovery</glossterm>
+    <glossdef>Five or more years in recovery from a substance use disorder.</glossdef>
+  </glossentry>
+  <glossentry id="vacatur">
+    <glossterm>Vacatur</glossterm>
+    <glossdef>A court order that cancels part or all of a rule.</glossdef>
+  </glossentry>
+</glossgroup>

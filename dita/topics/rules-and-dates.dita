@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="rules-and-dates">
+  <title>Rules And Dates</title>
+  <shortdesc>The frailty rules in one place, as they stand after the <keyword keyref="ruling-date"/> ruling.</shortdesc>
+  <refbody>
+    <properties id="rules">
+      <prophead><proptypehd>Rule</proptypehd><propvaluehd>Detail</propvaluehd></prophead>
+      <property><proptype>Work requirements begin</proptype><propvalue><keyword keyref="start-date"/>, in most states</propvalue></property>
+      <property><proptype>Data look-back</proptype><propvalue>Claims and encounter data from the preceding 12 months</propvalue></property>
+      <property><proptype>Member statements, through 2027</proptype><propvalue>States may accept them</propvalue></property>
+      <property><proptype>Member statements, from <keyword keyref="limit-date"/></proptype><propvalue>Once per enrollment period, then data or documentation</propvalue></property>
+      <property><proptype>Reverification</proptype><propvalue>At least every 12 months</propvalue></property>
+      <property><proptype>Impairment test</proptype><propvalue>Struck down on <keyword keyref="ruling-date"/>, with its scope still being clarified</propvalue></property>
+      <property><proptype>Pending case</proptype><propvalue><cite>Taylor v. Kennedy</cite>, which challenges the limit on self-declaration</propvalue></property>
+    </properties>
+    <section id="quick-reference">
+      <title>Caseworker Quick Reference</title>
+      <p>A one-page decision flow for checking whether a member is medically frail: <xref href="https://archanacontent.github.io/medically-frail-guide/is-this-member-exempt.pdf" scope="external" format="pdf">Is This Member Exempt? (PDF)</xref>.</p>
+    </section>
+    <section id="sources">
+      <title>Sources</title>
+      <ul>
+        <li><xref keyref="src-cms">CMS - Implementing Medical Frailty Under Community Engagement</xref></li>
+        <li><xref keyref="src-ifc">Federal Register - Community Engagement Requirement, CMS-2454-IFC</xref></li>
+        <li><xref keyref="src-summary">ADvancing States - Summary of the Interim Final Rule</xref></li>
+        <li><xref keyref="src-macpac">MACPAC - Community Engagement Requirements, September 2026</xref></li>
+        <li><xref keyref="src-beckers">Becker's - Judge rules CMS overstepped on the frailty definition</xref></li>
+        <li><xref keyref="src-hfma">HFMA - Court vacates CMS medical frailty restriction</xref></li>
+        <li><xref keyref="src-ctmirror">CT Mirror - Judge blocks rule forcing sick recipients to prove frailty</xref></li>
+        <li><xref keyref="src-ama">AMA - CMS releases medical frailty guidance</xref></li>
+        <li><xref keyref="src-manatt">Manatt Health - 50-state analysis of coverage losses</xref></li>
+      </ul>
+    </section>
+  </refbody>
+</reference>

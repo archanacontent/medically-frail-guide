@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="who-counts">
+  <title>Who Counts As Medically Frail</title>
+  <shortdesc>Federal law treats five groups of people as medically frail, and each state turns those groups into its own list of qualifying conditions.</shortdesc>
+  <conbody>
+    <dl outputclass="labels">
+      <dlentry>
+        <dt>Blind Or Disabled</dt>
+        <dd>As defined in section 1614 of the Social Security Act.</dd>
+      </dlentry>
+      <dlentry>
+        <dt>Substance Use Disorder</dt>
+        <dd>Unless the person has been in stable recovery for five years or more.</dd>
+      </dlentry>
+      <dlentry>
+        <dt>Disabling Mental Disorder</dt>
+        <dd>A mental health condition that is disabling.</dd>
+      </dlentry>
+      <dlentry>
+        <dt>Physical, Intellectual Or Developmental Disability</dt>
+        <dd>One that significantly limits at least one activity of daily living.</dd>
+      </dlentry>
+      <dlentry>
+        <dt>Serious Or Complex Medical Condition</dt>
+        <dd>One that is life-threatening, seriously disabling, causes significant pain or needs frequent monitoring, among other descriptors in the rule.</dd>
+      </dlentry>
+    </dl>
+    <section id="state-list">
+      <title>Your State's Condition List</title>
+      <p>Every state must keep a written list of the diseases, diagnoses and conditions that qualify. <xref keyref="src-cms">CMS requires the list</xref> to be auditable and justifiable, and states must revise it regularly to add or remove conditions.</p>
+    </section>
+    <section id="not-listed">
+      <title>Conditions Not On The List</title>
+      <p>Members whose condition isn't listed must have a <xref keyref="src-summary">reasonable way to request</xref> that the state consider it.</p>
+    </section>
+  </conbody>
+</concept>

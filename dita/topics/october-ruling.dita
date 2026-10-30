@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="october-ruling">
+  <title>What The October 29 Ruling Changed</title>
+  <shortdesc>A federal court struck down the extra impairment test that CMS had added to the definition, and kept the limits on data and self-declaration.</shortdesc>
+  <conbody>
+    <p>CMS's June 2026 rule added an extra test on top of the five groups: the member's condition also had to significantly impair their ability to meet the 80-hour monthly requirement. On <keyword keyref="ruling-date"/>, Judge Richard Stearns of the federal court in Massachusetts <xref keyref="src-beckers">struck down that added test</xref>. He ruled that CMS had exceeded its authority.</p>
+    <fig id="timeline">
+      <title>How The Rules Got Here</title>
+      <image href="../images/timeline.svg" placement="break" scope="local">
+        <alt>June 3, 2026: CMS publishes the interim final rule. September 2026: CMS issues frailty guidance. October 29, 2026: a federal court strikes down the added impairment test. January 1, 2027: work requirements begin in most states. January 1, 2028: self-declaration narrows to once per enrollment period.</alt>
+      </image>
+    </fig>
+    <dl outputclass="labels">
+      <dlentry>
+        <dt>What Still Stands</dt>
+        <dd>The court <xref keyref="src-hfma">upheld two limits</xref>: states may verify frailty using only the past 12 months of claims and encounter data, and from 2028 members can self-declare only once per enrollment period.</dd>
+      </dlentry>
+      <dlentry>
+        <dt>Extra Time For Some States</dt>
+        <dd>The 25 states and D.C. that brought the case received a six-month pause on federal enforcement of frailty decisions, giving them time to update their systems.</dd>
+      </dlentry>
+      <dlentry>
+        <dt>Still Unsettled</dt>
+        <dd><ph conref="../reuse/shared.dita#shared/scope-note"/> CMS hasn't said whether it will appeal. <ph conref="../reuse/shared.dita#shared/taylor-note"/></dd>
+      </dlentry>
+    </dl>
+    <note type="tip">Build the impairment check as a setting your team can switch off, rather than logic written into every rule.</note>
+  </conbody>
+</concept>

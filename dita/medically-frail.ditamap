@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xml:lang="en-US">
+  <title>Medically Frail: The Exemption States Can't Afford To Get Wrong</title>
+  <topicmeta>
+    <shortdesc>Medicaid 2027 Series - Part 2</shortdesc>
+    <author>Archana Panda</author>
+    <critdates>
+      <created date="2026-11-01"/>
+    </critdates>
+  </topicmeta>
+
+  <!-- Keys: dates and sources defined once, reused across every topic -->
+  <keydef keys="start-date"><topicmeta><keywords><keyword>January 1, 2027</keyword></keywords></topicmeta></keydef>
+  <keydef keys="limit-date"><topicmeta><keywords><keyword>January 1, 2028</keyword></keywords></topicmeta></keydef>
+  <keydef keys="ruling-date"><topicmeta><keywords><keyword>October 29, 2026</keyword></keywords></topicmeta></keydef>
+  <keydef keys="src-cms" href="https://www.medicaid.gov/resources-for-states/working-families-tax-cut-legislation/community-engagement/ImplementingMedicalFrailtyDeck.pdf" scope="external" format="pdf"/>
+  <keydef keys="src-ifc" href="https://www.federalregister.gov/documents/2026/06/03/2026-11094/medicaid-program-community-engagement-requirement-for-certain-individuals" scope="external" format="html"/>
+  <keydef keys="src-summary" href="https://www.advancingstates.org/sites/default/files/Summary%20of%20Interim%20Final%20Rule%20on%20Medicaid%20Community%20Engagement.pdf" scope="external" format="pdf"/>
+  <keydef keys="src-macpac" href="https://www.macpac.gov/wp-content/uploads/2026/09/01_September-Slides-Community-Engagement-Requirements-in-Medicaid.pdf" scope="external" format="pdf"/>
+  <keydef keys="src-beckers" href="https://www.beckershospitalreview.com/legal-regulatory-issues/judge-rules-cms-overstepped-on-medically-frail-definition-for-medicaid-work-requirements/" scope="external" format="html"/>
+  <keydef keys="src-hfma" href="https://www.hfma.org/payment-reimbursement-and-managed-care/medicaid-work-requirement-medical-frailty-ruling/" scope="external" format="html"/>
+  <keydef keys="src-ama" href="https://www.ama-assn.org/health-care-advocacy/access-care/cms-releases-medical-frailty-work-requirement-guidance-medicaid" scope="external" format="html"/>
+  <keydef keys="src-manatt" href="https://www.manatt.com/insights/white-papers/2026/cms-medicaid-work-requirements-rule-a-50-state-analysis-of-additional-coverage-losses-ffy-2027-2034" scope="external" format="html"/>
+  <keydef keys="src-ctmirror" href="https://ctmirror.org/2026/10/29/judge-blocks-medicaid-rule-forcing-sick-recipients-to-prove-frailty/" scope="external" format="html"/>
+
+  <topicgroup collection-type="sequence">
+    <topicref href="topics/overview.dita" type="concept"/>
+    <topicref href="topics/who-counts.dita" type="concept"/>
+    <topicref href="topics/october-ruling.dita" type="concept"/>
+    <topicref href="topics/find-in-data.dita" type="task"/>
+    <topicref href="topics/data-falls-short.dita" type="task"/>
+    <topicref href="topics/rules-and-dates.dita" type="reference">
+      <topicref href="topics/change-log.dita" type="reference"/>
+    </topicref>
+    <topicref href="topics/glossary.dita" type="glossgroup"/>
+  </topicgroup>
+  <topicref href="reuse/shared.dita" processing-role="resource-only"/>
+</map>

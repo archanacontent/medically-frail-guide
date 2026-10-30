@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="change-log">
+  <title>Change Log</title>
+  <shortdesc>Every revision to the guide, newest first.</shortdesc>
+  <refbody>
+    <simpletable id="versions" relcolwidth="1* 2* 5*">
+      <sthead><stentry>Version</stentry><stentry>Date</stentry><stentry>Change</stentry></sthead>
+      <strow><stentry>1.0</stentry><stentry>November 2026</stentry><stentry>First release, reflecting the <keyword keyref="ruling-date"/> ruling.</stentry></strow>
+    </simpletable>
+  </refbody>
+</reference>

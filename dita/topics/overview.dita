@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="overview">
+  <title>Where Frail Members Get Missed</title>
+  <shortdesc>Written for state eligibility and policy teams, and for the vendors who build their systems.</shortdesc>
+  <conbody>
+    <fig id="key-numbers" outputclass="key-numbers">
+      <title>Key Numbers</title>
+      <image href="../images/key-numbers.svg" placement="break" scope="local">
+        <alt>Work requirements begin January 1, 2027. States can use 12 months of claims data to verify frailty. Members have 30 days to answer a noncompliance notice. From 2028, self-declaration is allowed once per enrollment period.</alt>
+      </image>
+    </fig>
+    <p>From <keyword keyref="start-date"/>, most states will require adults covered through Medicaid expansion to work, study or volunteer 80 hours a month to keep their coverage. People who are medically frail are exempt, but only if the state recognises them as frail. To do that, the state has to spot their condition in medical claims data, and most eligibility systems were built to check income and household size, not health records. When the system misses someone, a person too sick to work gets a notice asking them to prove their hours, and can lose coverage if they don't respond within 30 days.</p>
+    <p>The definition itself has just changed. On <keyword keyref="ruling-date"/>, a federal court struck down part of it, so frailty logic built over the summer may already need rework.</p>
+    <section id="stakes">
+      <title>What Was At Stake</title>
+      <fig id="projected-losses">
+        <title>Projected Average Annual Coverage Losses, FFY 2027 To 2034</title>
+        <image href="../images/projected-losses.svg" placement="break" scope="local">
+          <alt>Baseline projection of 6.4 million a year, rising to 8.2 million a year with the interim final rule's added limits, an increase of 1.8 million.</alt>
+        </image>
+      </fig>
+      <p outputclass="caption">Projected by <xref keyref="src-manatt">Manatt Health on July 16, 2026</xref>, before the October 29 ruling removed part of the rule. The figures cover all of the rule's provisions, not frailty alone.</p>
+    </section>
+  </conbody>
+</concept>

@@ -1,0 +1,7 @@
+<div class="site-bar">
+  <a class="brand" href="ROOT/index.html"><span class="brand-mark">MF</span><span class="brand-text">Medically Frail Guide</span></a>
+  <div class="bar-actions">
+    <button type="button" class="icon-btn" id="theme-btn" aria-label="Switch light or dark mode"><span class="sun">Light</span><span class="moon">Dark</span></button>
+    <button type="button" class="icon-btn" id="menu-btn" aria-label="Open contents" aria-expanded="false">Contents</button>
+  </div>
+</div>
