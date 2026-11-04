@@ -2,6 +2,9 @@
 adds the dark versions of figures and builds the home page from the topic pages."""
 import glob, html, os, re, shutil, sys
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from meta import fix as fix_meta
+
 out, src, build = sys.argv[1], sys.argv[2], sys.argv[3]
 SITE = "https://archanacontent.github.io/medically-frail-guide/"
 
@@ -29,6 +32,7 @@ for path in sorted(glob.glob(f"{out}/topics/*.html")):
     m = re.search(r'<meta name="description" content="(.*?)">', page)
     desc = html.unescape(m.group(1)) if m else ""
     name = os.path.basename(path)
+    page = fix_meta(page, name)
     topics[name] = (title, desc)
     open(path, "w", encoding="utf-8").write(finish(page, "..", title, desc, SITE + "topics/" + name))
 
